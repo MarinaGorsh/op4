@@ -3,7 +3,22 @@
 using namespace std;
 int main()
 {
-	SetConsoleCP(1251);
+	float x, c, b, a;
+    cin >> x >> c >> b >> a;
+    double F;
+    if ((c < 0) && (b != 0)) {
+        F = a * x * x + b * b * x;
+        cout << F;
+    }
+    else if ((x > 0) && (b == 0)) {
+        F = x + a / x + c;
+        cout << F;
+    }
+    else if (c != 0) {
+        F = x / c;
+        cout << F;
+    }
+	/*SetConsoleCP(1251);
 	SetConsoleOutputCP(1251);
 
 	int x;
@@ -20,7 +35,7 @@ int main()
 	case 6: cout << "немає пар"; break;
 	case 7: cout << "немає пар"; break;
 	default: cout << "Не існує"; break;
-	}
+	}*/
 
 }
 
@@ -35,20 +50,5 @@ int main()
 
 
 
-/*    float x, c, b, a;
-    cin >> x >> c >> b >> a;
-    double F;
-    if ((c < 0) && (b != 0)) {
-        F = a * x * x + b * b * x;
-        cout << F;
-    }
-    else if ((x > 0) && (b == 0)) {
-        F = x + a / x + c;
-        cout << F;
-    }
-    else if (c != 0) {
-        F = x / c;
-        cout << F;
-    }
-}*/
+    
 
